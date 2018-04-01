@@ -65,6 +65,12 @@
           center: {lat: -6.6729404, lng: 110.8064626},
           mapTypeId: 'satellite'
         });
+        
+         var marker = new google.maps.Marker({
+          position: {lat: -6.6281519, lng: 110.7176114},
+          map: map
+        });
+        
         heatmap = new google.maps.visualization.HeatmapLayer({
           data: getPoints(),
           map: map
